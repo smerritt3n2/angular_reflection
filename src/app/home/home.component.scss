@@ -1,28 +1,22 @@
 
-span {
-    font-weight: bold;
-    background: lightgray;
-    padding: .3em .8em;
-    cursor: pointer;
-    user-select: none;
-}
-
-.play-container {
+.container {
     padding: 3em;
     border: 1px solid lightgray;
     margin-bottom: 1em;
 
-    input {
-        padding: 1em;
-        margin-bottom: 2em;
+    img {
+        width: 20em;
+        height: 6.5em;
     }
 }
 
-.active {
-    background-color: yellow;
-    border: 4px solid black;
-}
+.title-container {
+    padding: 3em;
+    margin-bottom: 1em;
+    background-image: url("https://media.dnd.wizards.com/styles/second_hubpage_banner/public/images/head-banner/04-PRODUCT-INFO_Tabletop_Hero_PHB_1.jpg");
 
-.notactive {
-    background-color: lightgray;
+    h1, h2 {
+        text-align: center;
+        color:white;
+    }
 }

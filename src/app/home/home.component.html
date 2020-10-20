@@ -1,26 +1,13 @@
 
-
-<h1>Welcome!</h1>
-
-<div class="play-container">
-    <p>You've clicked <span (click)="countClick()">this</span> {{ clickCounter }} times.</p>
+<div class="title-container">
+    <h1>Welcome! to the Mythical world of!</h1>
+    <h2>DUNGEONS & DRAGONS</h2>
 </div>
 
-<div class="play-container">
-    <p>
-        <input type="text" [(ngModel)]="name">
-        <br>
-        <strong>You said: </strong> {{ name }}
-    </p>
-</div>
 
-<div class="play-container" [ngClass]="setClasses()">
-
-    <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="none">
-        <p>The click counter <strong>IS GREATER</strong> than 4.</p>
-    </ng-template>
-
-    <ng-template #none>
-        <p>The click counter is <strong>not greater</strong> than 4.</p>
-    </ng-template>
+<div class="container">
+    <h1>The Adventure Begins....</h1>
+    <p>Do you desire the adventure of a <strong>LIFETIME!</strong> will you take your imagination to the next level. then come and play the infinit adventures of the great Dungeons and Dragons where the only limit to these adventures is you imagination.</p>
+    <p><strong>IF</strong> you desire to play this game and learn about the many unique features of this game then select the subjects above in the navigation-bar and this site will tell you what you need to know...</p>
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Dungeons_%26_Dragons_5th_Edition_logo.svg/1200px-Dungeons_%26_Dragons_5th_Edition_logo.svg.png">
 </div>

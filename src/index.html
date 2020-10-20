@@ -11,3 +11,40 @@
   <app-root></app-root>
 </body>
 </html>
+
+<script>
+    function getDetails() {
+      var elements = document.getElementsByClassName('hide');
+      for (var i in elements) {
+        if (elements.hasOwnProperty(i)) {
+          elements[i].className = 'm-container';
+        }
+      }
+
+        var input = document.getElementById("results").value;
+
+        fetch("https://www.dnd5eapi.co/api/monsters/"+ input)
+          .then(response => response.json())
+          .then(data => document.getElementById("name").innerHTML = data["index"])
+
+        fetch("https://www.dnd5eapi.co/api/monsters/"+ input)
+          .then(response => response.json())
+          .then(data => document.getElementById("type").innerHTML = data["type"])
+
+        fetch("https://www.dnd5eapi.co/api/monsters/"+ input)
+          .then(response => response.json())
+          .then(data => document.getElementById("strength").innerHTML = data["strength"])
+        
+        fetch("https://www.dnd5eapi.co/api/monsters/"+ input)
+          .then(response => response.json())
+          .then(data => document.getElementById("dex").innerHTML = data["dexterity"])
+
+        fetch("https://www.dnd5eapi.co/api/monsters/"+ input)
+          .then(response => response.json())
+          .then(data => document.getElementById("const").innerHTML = data["constitution"])
+
+        fetch("https://www.dnd5eapi.co/api/monsters/"+ input)
+          .then(response => response.json())
+          .then(data => document.getElementById("intel").innerHTML = data["intelligence"])
+    }
+</script>

@@ -1,0 +1,43 @@
+
+<div class="title-container">
+    <h1>Monster List!:</h1>
+</div>
+
+<h2>Here is the list of Monsters young travellers may encounter...</h2>
+
+<!--=================================== Spell Gallery ===================================-->
+<div class="gallery">
+    <div class="container"> <!-- Acid Arrow Details -->
+        <h3>How many monsters are there in total in the D and D World?</h3>
+        <p>The total amount of monsters there are in the game are {{ monsterlist.results.length }} <strong>Monsters!</strong></p>
+    </div>
+    <div class="container">
+        <h3>Monster Search!</h3>
+        <label>Type a number to reveal the MONSTERS: </label>
+        <input (keyup)="onKey($event)"><br>
+        <input value="{{ monsterlist.results[values].index }}" id="results" readonly="readonly"><br>
+            
+            <button onclick="getDetails()">More Details</button>
+    </div>
+    <div class="hide">
+        <h1>Monster Profile; <span id="name"></span></h1>
+            
+        <h4>What type is the monster?</h4>
+        <p>The monster is a <span id="type"></span>!</p>
+
+        <h4> - Combat Status;</h4>
+        <p>Strength: <span id="strength"></span></p>
+        <p>dexterity: <span id="dex"></span></p>
+        <p>constitution: <span id="const"></span></p>
+        <p>intelligence: <span id="intel"></span></p>
+
+        <label>Click Link to see Creature</label><br>
+        <a href="https://www.google.com/search?tbm=isch&q=d and d {{ monsterlist.results[values].name }}">{{ monsterlist.results[values].name }}</a> 
+    </div>
+</div>
+
+<!--=====================================================================================-->
+
+
+
+
